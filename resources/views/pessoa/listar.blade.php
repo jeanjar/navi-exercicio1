@@ -23,6 +23,7 @@
                             <td>{{ $pessoa->email }}</td>
                             <td>
                                 <a href="{{ url('pessoas/excluir', ['id' => $pessoa->id]) }}"><i class="glyphicon glyphicon-trash"></i></a>
+                                <a href="{{ url('pessoas/editar', ['id' => $pessoa->id]) }}"><i class="glyphicon glyphicon-edit"></i></a>
                             </td>
                         </tr>
                     @endforeach

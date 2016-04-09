@@ -18,6 +18,7 @@
             <input type="email" class="form-control" id="endereco_completo" placeholder="email" name="email" value="{{ old('email') }}">
         </div>
         <div class="form-group">
+            <a href="{{ url('pessoas/listar') }}" class="btn btn-danger pull-left">Cancelar</a>
             <button type="submit" class="btn btn-info pull-right">Cadastrar</button>
         </div>
     </form>

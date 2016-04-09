@@ -17,6 +17,9 @@ Route::get('/pessoas/listar', 'PessoaController@listar');
 Route::get('/pessoas/cadastrar', 'PessoaController@cadastrar');
 Route::post('/pessoas/cadastrar', 'PessoaController@processarCadastro');
 
+Route::get('pessoas/editar/{id}', 'PessoaController@editar');
+Route::post('pessoas/editar/{id}', 'PessoaController@processarEdicao');
+
 Route::get('pessoas/excluir/{id}', 'PessoaController@excluir');
 Route::post('pessoas/excluir/{id}', 'PessoaController@processarExclusao');
 
